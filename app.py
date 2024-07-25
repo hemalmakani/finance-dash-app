@@ -125,7 +125,7 @@ for key, dfs in data_frames.items():
         print(R_UC_df.columns)
 
 app = dash.Dash(__name__)
-
+server = app.server
 app.layout = html.Div([
     html.H1('Financial Data Analysis'),
     
