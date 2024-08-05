@@ -15,10 +15,6 @@ DATABASE_URL = os.environ.get('DATABASE_URL')
 if DATABASE_URL.startswith("postgres://"):
     DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
 
-# MySQL connection details
-DATABASE_URL = "mysql+pymysql://hemal:1234@localhost/vedantaanalytics"
-engine = create_engine(DATABASE_URL)
-
 # Function to load data from MySQL
 def load_data(table_name):
     return pd.read_sql_table(table_name.lower(), engine)
