@@ -7,3 +7,4 @@ plotly==5.14.1
 SQLAlchemy==1.4.47
 PyMySQL==1.0.3
 gunicorn==20.1.0
+dash-bootstrap-components
