@@ -14,7 +14,7 @@ engine = create_engine(DATABASE_URL)
 
 # Function to load data from PostgreSQL
 def load_data(table_name):
-    return pd.read_sql_table(table_name.lower(), engine)
+    return pd.read_sql_table(table_name, engine)
 
 # Load your data from PostgreSQL
 R_SN = load_data('r_sn')
