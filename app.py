@@ -17,7 +17,7 @@ def load_data(table_name):
     return pd.read_sql_table(table_name, engine)
 
 # Load your data from PostgreSQL
-R_SN = load_data('r_sn')
+R_SN = load_data('R_SN')
 R_SN_1000 = load_data('R_SN_1000')
 R_SN_1000G = load_data('R_SN_1000G')
 R_SN_1000V = load_data('R_SN_1000V')
