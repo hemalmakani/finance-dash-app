@@ -129,7 +129,7 @@ for key, dfs in data_frames.items():
 
 # Initialize the Dash app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-
+server = app.server
 # Navigation bar
 navbar = dbc.NavbarSimple(
     children=[
