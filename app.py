@@ -8,9 +8,7 @@ from sqlalchemy import create_engine
 import os
 
 # Database connection
-DATABASE_URL = os.environ.get('DATABASE_URL')
-if DATABASE_URL.startswith("postgres://"):
-    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
+DATABASE_URL = "postgresql://postgres.pecntvosavhuykanybhy:tLkSFkk3VDlmkcQu@aws-0-us-east-1.pooler.supabase.com:6543/postgres"
 
 engine = create_engine(DATABASE_URL)
 
